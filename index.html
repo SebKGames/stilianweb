@@ -154,8 +154,73 @@
             .hero-subtitle {
                 font-size: 20px;
             }
+        /* Mobile Responsive Styles */
+        @media (max-width: 768px) {
+            .hero {
+                height: 70vh;
+                background-position: center 25%;
+            }
+            
+            .hero-content {
+                margin-top: 200px;
+                max-width: 90%;
+                padding: 0 15px;
+            }
+            
+            .hero-quotes {
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;
+            }
+            
+            .hero-quote-item {
+                max-width: 280px;
+                padding: 20px 25px;
+            }
+            
+            .hero-quote {
+                font-size: 18px;
+            }
+            
+            .hero-quote-attribution {
+                font-size: 13px;
+            }
+            
+            .nav-menu {
+                gap: 20px;
+            }
+            
+            .nav-menu a {
+                font-size: 14px;
+            }
+            
+            .logo a {
+                font-size: 18px;
+            }
         }
-    </style>
+        
+        @media (max-width: 480px) {
+            .hero {
+                height: 60vh;
+            }
+            
+            .hero-content {
+                margin-top: 150px;
+            }
+            
+            .hero-quote-item {
+                max-width: 250px;
+                padding: 15px 20px;
+            }
+            
+            .hero-quote {
+                font-size: 16px;
+            }
+            
+            .hero-quote-attribution {
+                font-size: 12px;
+            }
+        }
 </head>
 <body>
     <header>

@@ -163,6 +163,64 @@
             font-size: 14px;
             margin: 0;
         }
+        
+        /* Mobile Responsive Styles */
+        @media (max-width: 768px) {
+            .about-hero {
+                flex-direction: column;
+                gap: 30px;
+                text-align: center;
+            }
+            
+            .about-portrait {
+                flex: none;
+                max-width: 300px;
+                margin: 0 auto;
+            }
+            
+            .about-quotes {
+                gap: 20px;
+            }
+            
+            .quote-block {
+                padding: 20px;
+            }
+            
+            .biography-content {
+                padding: 0 15px;
+            }
+            
+            .nav-menu {
+                gap: 20px;
+            }
+            
+            .nav-menu a {
+                font-size: 14px;
+            }
+            
+            .logo a {
+                font-size: 18px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .about-portrait {
+                max-width: 250px;
+            }
+            
+            .quote-block {
+                padding: 15px;
+            }
+            
+            .biography-content h2 {
+                font-size: 24px;
+            }
+            
+            .biography-content p {
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        }
         }
     </style>
 </head>
