@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concerts - STILIAN KIROV | Conductor</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #fff !important;
+            color: #000 !important;
+        }
+        header {
+            background-color: #fff !important;
+            border-bottom: none;
+            padding: 20px 0;
+        }
+        footer {
+            background-color: #fff !important;
+            border-top: 1px solid #ddd;
+        }
+        .logo a {
+            color: #000 !important;
+            font-weight: bold;
+            font-size: 22px;
+            text-decoration: none;
+        }
+        .nav-menu {
+            gap: 30px;
+        }
+        .nav-menu a {
+            color: #666 !important;
+            font-weight: normal;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .nav-menu a:hover {
+            color: #333 !important;
+        }
+        .nav-menu a.active {
+            color: #333 !important;
+        }
+        .nav-menu a::after {
+            display: none;
+        }
+        .page-hero {
+            background-color: #fff !important;
+        }
+        .concerts-content {
+            background-color: #fff !important;
+        }
+        
+        .concert-date .time {
+            font-size: 12px !important;
+            font-weight: 600 !important;
+            color: #fff !important;
+            display: block !important;
+            margin-top: 8px !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.5px !important;
+        }
+        
+        .concert-date {
+            color: #fff !important;
+        }
+        
+        .concert-date .month,
+        .concert-date .day,
+        .concert-date .year {
+            color: #fff !important;
+        }
+        
+        .tab-button {
+            padding: 12px 24px !important;
+            border: 2px solid #6c757d !important;
+            background-color: #fff !important;
+            color: #6c757d !important;
+            border-radius: 8px !important;
+            font-weight: 600 !important;
+            cursor: pointer !important;
+            transition: all 0.3s ease !important;
+            text-align: center !important;
+            display: inline-block !important;
+            box-shadow: 0 2px 4px rgba(108, 117, 125, 0.1) !important;
+        }
+        
+        .tab-button.active {
+            background-color: #6c757d !important;
+            color: #fff !important;
+            box-shadow: 0 4px 8px rgba(108, 117, 125, 0.3) !important;
+            transform: translateY(-1px) !important;
+        }
+        
+        .tab-button:hover {
+            background-color: #f8f9fa !important;
+            border-color: #495057 !important;
+            color: #495057 !important;
+            box-shadow: 0 3px 6px rgba(108, 117, 125, 0.2) !important;
+        }
+        
+        .tab-button.active:hover {
+            background-color: #495057 !important;
+            color: #fff !important;
+            box-shadow: 0 4px 8px rgba(108, 117, 125, 0.4) !important;
+        }
+        
+        .concert-item {
+            background-color: rgba(255, 255, 255, 0.95) !important;
+            border-radius: 12px !important;
+            padding: 20px !important;
+            margin-bottom: 20px !important;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+            backdrop-filter: blur(5px) !important;
+            border: 1px solid rgba(255, 255, 255, 0.2) !important;
+        }
+        
+        .concert-item h3 {
+            color: #000 !important;
+            font-weight: 600 !important;
+            font-style: normal !important;
+        }
+        
+        .concert-item p {
+            font-style: normal !important;
+        }
+        
+        .concert-item .venue {
+            color: #666 !important;
+        }
+        
+        .concert-item * {
+            font-style: normal !important;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html"><span style="font-weight: bold;">STILIAN</span> <span style="font-weight: normal;">KIROV</span></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="concerts.html" class="active">Concerts</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero" style="background-image: url('IPO-In-Concert.png'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 80vh; margin: 0; padding: 0; position: relative;">
+            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(255, 255, 255, 0.3); z-index: 1;"></div>
+        </section>
+
+        <section class="concerts-content">
+            <div class="container">
+                <div class="concerts-tabs">
+                    <button class="tab-button active" data-tab="upcoming">2025-2026</button>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-panel active" id="upcoming">
+                        <div class="concerts-grid">
+                            <div class="concert-item">
+                                <div class="concert-date">
+                                    <span class="month">OCT</span>
+                                    <span class="day">4</span>
+                                    <span class="year">2025</span>
+                                    <span class="time">5:30 PM</span>
+                                </div>
+                                <div class="concert-details">
+                                    <h3>BAKERSFIELD SYMPHONY ORCHESTRA | Opening Night</h3>
+                                    <p class="venue">Dignity Health Theater, Bakersfield, CA, U.S.</p>
+                                    <p class="program">STRAUSS | Also Sprach Zarathustra, Fanfare<br>JOHN WILLIAMS | "Adventures on Earth" from E.T. The Extra-Terrestrial<br>HOLST | The Planets</p>
+                                </div>
+                            </div>
+                            
+                            <div class="concert-item">
+                                <div class="concert-date">
+                                    <span class="month">OCT</span>
+                                    <span class="day">25</span>
+                                    <span class="year">2025</span>
+                                    <span class="time">5:30 PM</span>
+                                </div>
+                                <div class="concert-details">
+                                    <h3>ILLINOIS PHILHARMONIC ORCHESTRA | Opening Night</h3>
+                                    <p class="venue">Ozinga Chapel, Palos Heights, Illinois, U.S.</p>
+                                    <p class="program">BEETHOVEN | Prometheus Overture<br>BEETHOVEN | Violin Concerto | Adé Williams, Violin<br>BEETHOVEN | Symphony No. 5</p>
+                                </div>
+                            </div>
+                            
+                            <div class="concert-item">
+                                <div class="concert-date">
+                                    <span class="month">NOV</span>
+                                    <span class="day">8</span>
+                                    <span class="year">2025</span>
+                                    <span class="time">6:30 PM</span>
+                                </div>
+                                <div class="concert-details">
+                                    <h3>BAKERSFIELD SYMPHONY ORCHESTRA | An American Salute</h3>
+                                    <p class="venue">Dignity Health Theater, Bakersfield, CA, U.S.</p>
+                                    <p class="program">GOULD | American Salute<br>CUSTER | The American Frontier<br>JOHN WILLIAMS | Hymn to the Fallen<br>LOWDEN | Armed Forces Salute<br>BARBER | Adagio for Strings<br>SOUSA, ARR. ED GEORGE | Washington Post March<br>TCHAIKOVSKY | 1812 Overture<br>SOUSA | Stars and Stripes Forever</p>
+                                </div>
+                            </div>
+                            
+                            <div class="concert-item">
+                                <div class="concert-date">
+                                    <span class="month">NOV</span>
+                                    <span class="day">22</span>
+                                    <span class="year">2025</span>
+                                    <span class="time">3:00 PM</span>
+                                </div>
+                                <div class="concert-details">
+                                    <h3>ILLINOIS PHILHARMONIC ORCHESTRA | Night Moves</h3>
+                                    <p class="venue">Center of Performing Arts Theater, University Park, Illinois, U.S.</p>
+                                    <p class="program">CUSTER | Star Trek Through the Years<br>WILLIAMS | E.T. Adventures on Earth<br>HOLST | The Planets (with visuals by Adrian Wyard)</p>
+                                </div>
+                            </div>
+                            
+                            <div class="concert-item">
+                                <div class="concert-date">
+                                    <span class="month">DEC</span>
+                                    <span class="day">5</span>
+                                    <span class="year">2025</span>
+                                    <span class="time">6:30 PM</span>
+                                </div>
+                                <div class="concert-details">
+                                    <h3>BAKERSFIELD SYMPHONY ORCHESTRA | Home for the Holiday</h3>
+                                    <p class="venue">Dignity Health Theater, Bakersfield, CA, U.S.</p>
+                                    <p class="program">With Bakersfield Master Chorale, Bakersfield College Combined Choirs, and CSUB University Singers</p>
+                                </div>
+                            </div>
+                            
+                            <div class="concert-item">
+                                <div class="concert-date">
+                                    <span class="month">DEC</span>
+                                    <span class="day">20</span>
+                                    <span class="year">2025</span>
+                                    <span class="time">3:00 PM</span>
+                                </div>
+                                <div class="concert-details">
+                                    <h3>ILLINOIS PHILHARMONIC ORCHESTRA | IPO Holiday Festival</h3>
+                                    <p class="venue">Ozinga Chapel, Palos Heights, Illinois, U.S.</p>
+                                    <p class="program">A Celebration of Voice & Music | Chicago Community Chorus</p>
+                                </div>
+                            </div>
+                            
+                            <div class="concert-item">
+                                <div class="concert-date">
+                                    <span class="month">JAN</span>
+                                    <span class="day">24</span>
+                                    <span class="year">2026</span>
+                                    <span class="time">7:30 PM</span>
+                                </div>
+                                <div class="concert-details">
+                                    <h3>THE SYRACUSE ORCHESTRA | Brahms & Debussy</h3>
+                                    <p class="venue">Oncenter Crouse Hinds Theatre, Syracuse NY, USA</p>
+                                    <p class="program">DEBUSSY | Pagodes<br>DUN | Concerto de Trombones: Three Muses in Video Game | Ben Dettleback, trombone<br>BRAHMS | Symphony No.2 in D Major, Opus 73</p>
+                                </div>
+                            </div>
+                            
+                            <div class="concert-item">
+                                <div class="concert-date">
+                                    <span class="month">FEB</span>
+                                    <span class="day">14</span>
+                                    <span class="year">2026</span>
+                                    <span class="time">7:30 PM</span>
+                                </div>
+                                <div class="concert-details">
+                                    <h3>ILLINOIS PHILHARMONIC ORCHESTRA | Valentine's Day</h3>
+                                    <p class="venue">Ozinga Chapel, Palos Heights, Illinois, U.S.</p>
+                                    <p class="program">F. MENDELSSOHN | Overture in C major<br>C. SCHUMANN | Piano Concerto | Anastasiya Poff, Piano<br>R. SCHUMANN | Symphony No. 4</p>
+                                </div>
+                            </div>
+                            
+                            <div class="concert-item">
+                                <div class="concert-date">
+                                    <span class="month">FEB</span>
+                                    <span class="day">28</span>
+                                    <span class="year">2026</span>
+                                    <span class="time">7:00 PM</span>
+                                </div>
+                                <div class="concert-details">
+                                    <h3>THE SYRACUSE ORCHESTRA | Folk Music Inspired</h3>
+                                    <p class="venue">Saint Paul's Syracuse, Syracuse, NY</p>
+                                    <p class="program">BARTOK | Romanian Folk Dances<br>KODALY | Dances of Marosszek<br>DVORAK | Czech Suite<br>LIGETI | Concert Romanesc</p>
+                                </div>
+                            </div>
+                            
+                            <div class="concert-item">
+                                <div class="concert-date">
+                                    <span class="month">MAR</span>
+                                    <span class="day">1</span>
+                                    <span class="year">2026</span>
+                                    <span class="time">3:00 PM</span>
+                                </div>
+                                <div class="concert-details">
+                                    <h3>THE SYRACUSE ORCHESTRA | Folk Music Inspired</h3>
+                                    <p class="venue">Saint Paul's Syracuse, Syracuse, NY, US</p>
+                                    <p class="program">BARTOK | Romanian Folk Dances<br>KODALY | Dances of Marosszek<br>DVORAK | Czech Suite<br>LIGETI | Concert Romanesc</p>
+                                </div>
+                            </div>
+                            
+                            <div class="concert-item">
+                                <div class="concert-date">
+                                    <span class="month">MAR</span>
+                                    <span class="day">14</span>
+                                    <span class="year">2026</span>
+                                    <span class="time">7:30 PM</span>
+                                </div>
+                                <div class="concert-details">
+                                    <h3>ILLINOIS PHILHARMONIC ORCHESTRA | Vivaldi The Four Seasons</h3>
+                                    <p class="venue">Ozinga Chapel, Palos Heights, Illinois, U.S.</p>
+                                    <p class="program">VIVALDI | The Four Seasons<br>DVORAK | Serenade in E major op. 22</p>
+                                </div>
+                            </div>
+                            
+                            <div class="concert-item">
+                                <div class="concert-date">
+                                    <span class="month">MAR</span>
+                                    <span class="day">21</span>
+                                    <span class="year">2026</span>
+                                    <span class="time">6:30 PM</span>
+                                </div>
+                                <div class="concert-details">
+                                    <h3>BAKERSFIELD SYMPHONY ORCHESTRA | Beethoven, Beethoven, Beethoven!</h3>
+                                    <p class="venue">Dignity Health Theater, Bakersfield, CA, U.S.</p>
+                                    <p class="program">BEETHOVEN | Prometheus Overture<br>BEETHOVEN | Violin Concerto in D major, Op. 61 | Eunice Kim, violin<br>BEETHOVEN | Symphony no. 6 "Pastoral"</p>
+                                </div>
+                            </div>
+                            
+                            <div class="concert-item">
+                                <div class="concert-date">
+                                    <span class="month">APR</span>
+                                    <span class="day">11</span>
+                                    <span class="year">2026</span>
+                                    <span class="time">6:30 PM</span>
+                                </div>
+                                <div class="concert-details">
+                                    <h3>BAKERSFIELD SYMPHONY ORCHESTRA | The Great Classics</h3>
+                                    <p class="venue">Dignity Health Theater, Bakersfield, CA, U.S.</p>
+                                    <p class="program">MOZART | Don Giovanni: Overture<br>PRICE | Andante Moderato for string orchestra<br>MOZART | Horn Concerto No. 4 in E-flat major, K. 495 | Aija Mattson-Jovel, horn<br>HAYDN | Symphony No. 104 in D major, "London"</p>
+                                </div>
+                            </div>
+                            
+                            <div class="concert-item">
+                                <div class="concert-date">
+                                    <span class="month">APR</span>
+                                    <span class="day">18</span>
+                                    <span class="year">2026</span>
+                                    <span class="time">7:30 PM</span>
+                                </div>
+                                <div class="concert-details">
+                                    <h3>ILLINOIS PHILHARMONIC ORCHESTRA | Legendary Music of the Movies</h3>
+                                    <p class="venue">Ozinga Chapel, Palos Heights, Illinois, U.S.</p>
+                                    <p class="program">Harry Potter and the Sorcerer's Stone, Jurassic Park theme, Jaws suite, Schindler's List theme, Indiana Jones and the Lost Ark Raiders March, The Flight to Neverland, The Patriot, Close Encounters of the Third Kind excerpts, Call of the Champions, Superman march, Star Wars theme</p>
+                                </div>
+                            </div>
+                            
+                            <div class="concert-item">
+                                <div class="concert-date">
+                                    <span class="month">MAY</span>
+                                    <span class="day">9</span>
+                                    <span class="year">2026</span>
+                                    <span class="time">6:30 PM</span>
+                                </div>
+                                <div class="concert-details">
+                                    <h3>BAKERSFIELD SYMPHONY ORCHESTRA | Epic Scores: The Music of John Williams</h3>
+                                    <p class="venue">Dignity Health Theater, Bakersfield, CA, U.S.</p>
+                                    <p class="program">Harry Potter and the Sorcerer's Stone, Theme from Jurassic Park, Jaws, Theme from Schindler's List, Raiders of the Lost Ark, Flight to Neverland (from Hook), The Patriot, Close Encounters of the Third Kind, Call of the Champions, Superman March</p>
+                                </div>
+                            </div>
+                            
+                            <div class="concert-item">
+                                <div class="concert-date">
+                                    <span class="month">MAY</span>
+                                    <span class="day">16</span>
+                                    <span class="year">2026</span>
+                                    <span class="time">7:30 PM</span>
+                                </div>
+                                <div class="concert-details">
+                                    <h3>ILLINOIS PHILHARMONIC ORCHESTRA | Season Finale</h3>
+                                    <p class="venue">Ozinga Chapel, Palos Heights, Illinois, U.S.</p>
+                                    <p class="program">AMERICA TURNS 250: A Celebration of the 250th Anniversary of America in Music<br>TOWER | Fanfare No. 1<br>MONTGOMERY | Coincident Dances<br>SOUSA | Liberty Bell March, Washington Post March, Stars and Stripes Forever<br>COPLAND | Billy the Kid suite, Lincoln Portrait</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; Stilian Kirov, conductor | Official Website</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

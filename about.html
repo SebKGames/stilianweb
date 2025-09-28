@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - STILIAN KIROV | Conductor</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #fff !important;
+            color: #000 !important;
+        }
+        header {
+            background-color: #fff !important;
+            border-bottom: none;
+            padding: 20px 0;
+        }
+        footer {
+            background-color: #fff !important;
+            border-top: 1px solid #ddd;
+        }
+        .logo a {
+            color: #000 !important;
+            font-weight: bold;
+            font-size: 22px;
+            text-decoration: none;
+        }
+        .nav-menu {
+            gap: 30px;
+        }
+        .nav-menu a {
+            color: #666 !important;
+            font-weight: normal;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .nav-menu a:hover {
+            color: #333 !important;
+        }
+        .nav-menu a.active {
+            color: #333 !important;
+        }
+        .nav-menu a::after {
+            display: none;
+        }
+        .page-hero {
+            background-color: #fff !important;
+        }
+        .about-content {
+            background-color: #fff !important;
+        }
+        .achievements {
+            background-color: #f8f9fa !important;
+        }
+        .repertoire {
+            background-color: #fff !important;
+        }
+        
+        /* About Hero Layout */
+        .about-hero {
+            display: flex;
+            gap: 60px;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        
+        .about-portrait {
+            flex: 0 0 264px;
+        }
+        
+        .profile-image {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            object-position: center top;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .about-quotes {
+            flex: 1;
+            padding-top: 20px;
+        }
+        
+        .quote-block {
+            margin-bottom: 40px;
+        }
+        
+        .quote-block p {
+            font-family: 'Times New Roman', serif;
+            font-size: 16px;
+            line-height: 1.6;
+            color: #000;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        .attribution {
+            font-style: italic;
+            font-size: 14px;
+            color: #666;
+            margin-top: 10px;
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .about-hero {
+                flex-direction: column;
+                gap: 40px;
+            }
+            
+            .about-portrait {
+                flex: none;
+                text-align: center;
+            }
+            
+        .profile-image {
+            max-width: 250px;
+        }
+        
+        /* Biography Section */
+        .biography-section {
+            margin-top: 0px;
+        }
+        
+        .biography-section h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .biography-content {
+            max-width: 100%;
+        }
+        
+        .biography-content p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #000;
+            margin-bottom: 30px;
+            text-align: left;
+            display: block;
+        }
+        
+        /* Footer Styles */
+        footer {
+            background-color: #f8f9fa;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+        }
+        
+        .footer-bottom p {
+            color: #333;
+            font-size: 14px;
+            margin: 0;
+        }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html"><span style="font-weight: bold;">STILIAN</span> <span style="font-weight: normal;">KIROV</span></a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="concerts.html">Concerts</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-content">
+            <div class="container">
+                <div class="about-hero">
+                    <div class="about-portrait">
+                        <img src="stilian-portrait.jpeg" alt="Stilian Kirov" class="profile-image">
+                    </div>
+                    <div class="about-quotes">
+                        <div class="quote-block">
+                            <p>"In both the Rosenkavalier Suite and the performance of Till Eulenspiegel's Merry Pranks that closed the evening, one was impressed anew at Kirov's conducting. No matter what the repertoire, Kirov always seems to find the perfect tempo giusto. While he draws playing of great vitality and dynamism, his supple, flexible direction never indulges in extremes or theatricality for its own sake and is always put wholly at the service of the score at hand."</p>
+                        </div>
+                        <div class="quote-block">
+                            <p>"...the playing of the IPO under Stilian Kirov was consistently impressive—polished, strongly projected, and bristling with virtuosic energy. As Kirov begins his third season as music director, it is clear that the young maestro is taking his southwest suburban orchestra to a new and exciting level."</p>
+                            <p class="attribution">Lawrence A. Johnson | Chicago Classical Review</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="biography-section">
+                    <h2>BIOGRAPHY</h2>
+                    <br>
+                    <div class="biography-content">
+                        <p>First Prize Winner of the "Debut Berlin" Concert Competition, Stilian Kirov made his debut at the Berlin Philharmonic in 2017. The same year he began his tenure as Music Director of the Illinois Philharmonic in Chicago's Southland and while continuing his music directorship with the Bakersfield Symphony in California. In 2024, Stilian Kirov also joins the Southwest Florida Symphony Orchestra as Interim Artistic Advisor and Principal Conductor. A 2019, 2018, 2017 and 2016 recipient of the Solti Foundation U.S. Career Assistance Award, Mr. Kirov has proven to be not only a dynamic artistic director, but also an enthusiastic educator and community leader, continuing to build upon his previous successes as Music Director of Symphony in C in New Jersey as well as Associate Conductor of the Seattle Symphony and Associate Conductor of the Memphis Symphony.</p>
+                        <br>
+                        
+                        <p>Highlights of Mr. Kirov's guest performances include appearances worldwide with the Israel Camerata, Xi'An Symphony, Minas Gerais Philharmonic Orchestra, Sofia Philharmonic, Leopolis Chamber Orchestra/Ukraine, Orchestra of Colors/Athens, Orchestre Colonne/Paris, Sofia Festival Orchestra, State Hermitage Orchestra/St. Petersburg, Thüringen Philharmonic Orchestra, the Zagreb Philharmonic, the Musical Olympus International Festival in St. Petersburg, and the Victoria Symphony/British Columbia, among others.</p>
+                        <br>
+                        
+                        <p>In the United States., Mr. Kirov has collaborated with the symphonies of Seattle, Memphis, Chautauqua, Omaha, Kalamazoo, South Bend, and West Virginia as well as Amarillo Symphony, National Repertory Orchestra/Breckenridge, and the Tucson Symphony. Following his highly acclaimed debut in 2012, he also appeared regularly as guest conductor with the Pacific Northwest Ballet in Seattle.</p>
+                        <br>
+                        
+                        <p>During the 2013/2014 season, Stilian Kirov was engaged as an assistant conductor to Bernard Haitink with the Chicago Symphony Orchestra as well as a cover conductor for Stéphane Denève, the late Rafael Frühbeck de Burgos, Christoph von Dohnányi, and Andrew Davis, all with the Boston Symphony Orchestra. Also during that season, he stepped in to replace Rafael Frühbeck de Burgos with the Seattle Symphony, conducting "spectacular" performances of Orff's Carmina Burana.</p>
+                        <br>
+                        
+                        <p>A prize winner at Denmark's 2015 Malko Competition, Stilian Kirov is the recipient of numerous awards and prizes, including an Emmy for the Memphis Symphony's Soundtrack Project, the Orchestra Preference Award, and Third Prize at the 2010 Mitropoulos Conducting Competition, as well as Juilliard's Bruno Walter Memorial Scholarship and the Charles Schiff Conducting Award for outstanding achievement. He is also the recipient of France's 2010 ADAMI Conducting Prize, culminating in a showcase concert at the Salle Gaveau with the Orchestre Colonne. Following the performance, Mr. Kirov was invited to conduct the orchestra's opening concerts of the 2011/2012 season in Paris.</p>
+                        <br>
+                        
+                        <p>Mr. Kirov is a graduate of The Juilliard School in orchestral conducting, where he was a student of James DePreist. In 2012, he studied at the Aspen Academy of Conducting, and in 2013, was one of three Conducting Fellows at the Tanglewood Music Center. In 2010, he was awarded the Chautauqua Music Festival's David Effron Conducting Fellowship, and returned in 2012 and 2018 as a guest conductor. Mr. Kirov holds a master's degree in conducting from the Ecole Normale de Musique in Paris, where he studied with Dominique Rouits. He has participated in master classes with such distinguished conductors as the late Kurt Masur, Michael Tilson Thomas, Gianluigi Gelmetti, George Manahan, and Asher Fisch.</p>
+                        <br>
+                        
+                        <p>Also a gifted pianist, Stilian Kirov was Gold Medalist of the 2001 Claude Kahn International Piano Competition in Paris.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; Stilian Kirov, conductor | Official Website</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
