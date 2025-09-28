@@ -140,6 +140,14 @@
             flex-direction: column;
             cursor: pointer;
             padding: 5px;
+            position: relative;
+            z-index: 10000;
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu-toggle {
+                display: flex !important;
+            }
         }
         
         .mobile-menu-toggle span {
@@ -163,10 +171,6 @@
         }
         
         @media (max-width: 768px) {
-            .mobile-menu-toggle {
-                display: flex !important;
-            }
-            
             .nav-menu {
                 position: fixed !important;
                 top: 70px !important;
@@ -470,20 +474,27 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
     <script>
-        // Mobile menu toggle
+        // Mobile menu toggle - inline to avoid conflicts
         document.addEventListener('DOMContentLoaded', function() {
             const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
             const navMenu = document.querySelector('.nav-menu');
             
             if (mobileMenuToggle && navMenu) {
-                mobileMenuToggle.addEventListener('click', function() {
-                    navMenu.classList.toggle('active');
-                    mobileMenuToggle.classList.toggle('active');
-                });
+                mobileMenuToggle.onclick = function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    
+                    const isActive = navMenu.classList.contains('active');
+                    if (isActive) {
+                        navMenu.classList.remove('active');
+                        mobileMenuToggle.classList.remove('active');
+                    } else {
+                        navMenu.classList.add('active');
+                        mobileMenuToggle.classList.add('active');
+                    }
+                };
                 
-                // Close menu when clicking on a link
                 navMenu.addEventListener('click', function(e) {
                     if (e.target.tagName === 'A') {
                         navMenu.classList.remove('active');
